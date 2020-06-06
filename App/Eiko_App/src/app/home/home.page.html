@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>
+        Eiko App
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+   
+  <ion-content [forceOverscroll]="false">
+    <ion-row>
+      <ion-col *ngFor="let color of colors" [style.background]="color" class="color-block" tappable
+        (click)="selectColor(color)"></ion-col>
+    </ion-row>
+    
+    <canvas #imageCanvas></canvas>
+    
+    <ion-button expand="full" shape="round" color="secondary" (click)="presentModal()">Guardar</ion-button>
+  </ion-content>

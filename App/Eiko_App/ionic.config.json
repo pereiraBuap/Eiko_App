@@ -1,0 +1,7 @@
+{
+  "name": "Eiko_App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
