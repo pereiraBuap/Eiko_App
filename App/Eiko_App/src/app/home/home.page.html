@@ -12,22 +12,22 @@
     <ion-item>
       <ion-icon slot="start" name="moon"></ion-icon>
       <ion-label>Color Oscuro</ion-label>
-      <ion-toggle slot="end" (ionChange)="darkTheme()"></ion-toggle>
+      <ion-toggle [(ngModel)]="dark" slot="end" (ionChange)="darkTheme()"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-icon slot="start" name="color-filter-outline"></ion-icon>
       <ion-label>Verde suave, deuteranopía</ion-label>
-      <ion-toggle slot="end" (ionChange)="firstTheme()"></ion-toggle>
+      <ion-toggle [(ngModel)]="first" slot="end" (ionChange)="firstTheme()"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-icon slot="start" name="color-palette-outline"></ion-icon>
       <ion-label>Rojo suave, protanopía</ion-label>
-      <ion-toggle slot="end" (ionChange)=secondTheme()></ion-toggle>
+      <ion-toggle [(ngModel)]="second" slot="end" (ionChange)=secondTheme()></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-icon slot="start" name="eye-outline"></ion-icon>
       <ion-label>Tritanopía</ion-label>
-      <ion-toggle slot="end" (ionChange)="thirdTheme()"></ion-toggle>
+      <ion-toggle [(ngModel)]="third" slot="end" (ionChange)="thirdTheme()"></ion-toggle>
     </ion-item>
     
   </ion-list>
